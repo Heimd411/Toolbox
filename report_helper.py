@@ -1,12 +1,11 @@
+from docx import Document
 
-screenshooter():
-    save screenshot to $file.docx
+document = Document()
 
-make_comment():
-    add comment to image in $file.docx
-    user input()
+document.add_heading(input('Document title:\n'), 0)
 
-main("save file"):
-    if screenshot:
-        screenshooter()
-        make_comment()
+while True:
+    document.add_heading(input('Image heading:\n'), 4)
+    document.add_picture(input('Image filename:\n'))
+    document.add_paragraph(input('Comment:\n'))
+    document.save('test.docx')
