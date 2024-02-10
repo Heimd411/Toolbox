@@ -1,8 +1,8 @@
 import argparse
-from bs4 import BeautifulSoup
 import re
 import requests
 import sys
+from bs4 import BeautifulSoup
 
 parser = argparse.ArgumentParser(description='Scrapes website for emails.')
 

@@ -9,3 +9,4 @@ while True:
     document.add_picture(input('Image filename:\n'))
     document.add_paragraph(input('Comment:\n'))
     document.save('test.docx')
+

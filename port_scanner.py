@@ -1,9 +1,9 @@
 import argparse
 import queue
 import threading
-from queue import Queue
 import time
 import socket
+from queue import Queue
 
 num_threads = 50
 p_lock = threading.Lock()
@@ -12,6 +12,9 @@ open_ports = []
 socket.setdefaulttimeout(0.15)
 
 def portscan(port):
+    """
+    Tries to connect to ports, if successfull adds port to list.
+    """
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
         s.connect((host, port))
@@ -23,6 +26,9 @@ def portscan(port):
         pass
 
 def scan_thread():
+    """
+    Handle workers
+    """
     global queue
     while True:
         worker = queue.get()
@@ -30,6 +36,9 @@ def scan_thread():
         queue.task_done()
 
 def main(host, ports):
+    """
+    Main function
+    """
     global queue
     startTime = time.time()
     for t in range(num_threads):

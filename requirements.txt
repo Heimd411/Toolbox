@@ -20,3 +20,4 @@ trio-websocket==0.11.1
 typing_extensions==4.9.0
 urllib3==2.1.0
 wsproto==1.2.0
+xmltodict==0.13.0

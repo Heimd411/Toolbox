@@ -46,3 +46,4 @@ def getprograms():
         print(f"{v['@name']}")
 
 main()
+
