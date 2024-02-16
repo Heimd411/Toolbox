@@ -21,8 +21,12 @@ Tool which helps you save and collect data for your report.
 ```
 report_helper.py
 ```
-First will ask for project name.
-Will ask for URI to screenshot, then for a comment for the image. Will repeat this step until exit.
+1. Project name
+2. Start loop
+3. Ask for screenshot URI
+4. Comment
+5. Repeat 3-4
+File will be saved as text.docx in script folder.
 
 ## APiTalk
 Not very usefull interface for talking to SR api.
