@@ -3,10 +3,12 @@
 # My toolbox
 To install dependencies use:
 ```
+python3 -m venv venv
+source venv/bin/activate
 pip install -r ./requirements.txt
 ```
 ## Mail Scraper
-Simpel tool which scrapes websites for emails.
+Simpel tool that scrapes websites for emails.
 ```
 mail_scraper.py --url
 ```
@@ -34,5 +36,5 @@ Not very usefull interface for talking to SR api.
 ## Insta Brute
 Script that will bruteforce Instagram loginpage.
 ```
-insta_brute.py --user <USER> --rate-limit X (Default 5sec)
+insta_brute.py --user USERNAME [--rate-limit X] (Default 5sec)
 ```
