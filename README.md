@@ -1,4 +1,4 @@
-<b>These tools a part of a school exercise and should not be used in live testing!!!</b>
+<b>These tools were part of a school exercise and should not be used in live testing!!!</b>
 
 # My toolbox
 To install dependencies use:
